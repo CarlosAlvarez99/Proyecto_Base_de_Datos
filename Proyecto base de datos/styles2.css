@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+}
+.main-header{
+    background-image:url("https://source.unsplash.com/KMn4VEeEPR8");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Dosis', sans-serif;
+    position:relative;
+
+}
+.main-nav{
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+.logo{
+    color:beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    padding: 20px 40px;
+    font-size: 1.3rem;
+}
+
+ul{
+    display: flex;
+    margin-left: auto;
+    margin-right: 100px;
+}
+ul li a {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.3rem;
+    color: aliceblue;
+}
+ul li a:hover{
+    background: #489;
+}
+.Experiencia_1 {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    border: black 2px solid;
+    margin: 20px;
+    display: block;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    position: absolute;
+}
+.Experiencia_1 img{
+    height: 405px;
+    width: 405px;
+    object-fit: cover;
+}
+.Experiencia_1 h1{
+    font-size: 1.5rem;
+}
+.Experiencia_1 details{
+    padding: 20px 40px;
+    width: auto;
+    list-style: none;
+}
+.Experiencia_1 details:hover{
+    background: #489;
+}
+.Experiencia_1 details[open]{
+    background: green;
+}
+.Experiencia_1 summary{
+    font-weight: 400;
+    list-style: none;
+    cursor: pointer;
+}
+.Experiencia_1 details[open] summary{
+    font-weight: 600;
+}
+.Experiencia_2{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 30%;
+    left: 33%;
+    right: 37%;
+    top: 100%;
+    text-align: center;
+    border: black 2px solid;
+    margin: 20px;
+    display: block;
+    }
+.Experiencia_2 img{
+    height: 406px;
+    width: 404px;
+    object-fit: cover;
+}
+.Experiencia_2 h1{
+    font-size: 1.5rem;
+}
+.Experiencia_2 details{
+    overflow: auto;
+    width: auto;
+    padding: 20px 40px;
+    height: auto;
+}
+.Experiencia_2 details:hover{
+    background: #489;
+}
+.Experiencia_2 details[open]{
+    background: #fff;
+}
+.Experiencia_2 summary{
+    font-weight: 400;
+    list-style: none;
+    cursor: pointer;
+}
+.Experiencia_2 details[open] summary{
+    font-weight: 600;
+}
+.Experiencia_3 {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    border: black 2px solid;
+    margin: 20px;
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+.Experiencia_3 img{
+    height: 406px;
+    width: 404px;
+    object-fit: cover;
+}
+.Experiencia_3 h1{
+    font-size: 1.5rem;
+}
+.Experiencia_3 details{
+    padding: 20px 40px;
+    width: auto;
+}
+.Experiencia_3 details:hover{
+    background: #489;
+}
+.Experiencia_3 details[open]{
+    background: red;
+}
+.Experiencia_3 summary{
+    font-weight: 400;
+    list-style: none;
+    cursor: pointer;
+}
+.Experiencia_3 details[open] summary{
+    font-weight: 600;
+}

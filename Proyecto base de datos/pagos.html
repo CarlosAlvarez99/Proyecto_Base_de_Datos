@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles3.css">
+    <title>Agencia de viajes</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">Vesta</div>
+          <ul class="nav-links">
+            <li><a href="file:///home/carlos/Documentos/Proyecto%20base%20de%20datos/index.html#0">Inicio</a></li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#file:///home/carlos/Documentos/Proyecto%20base%20de%20datos/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="hero">
+          <h1>Descubre tu próximo destino con Vesta</h1>
+          <a href="#destinos" class="btn">Ver Destinos</a>
+        </div>
+      </header>
+    
+      <section id="inicio">
+        <div class="container">
+          <h2>Bienvenido a Vesta</h2>
+          <p>En Vesta, nos apasiona brindarte experiencias de viaje inolvidables. Nuestro equipo de expertos está listo para ayudarte a descubrir los destinos más increíbles del mundo.</p>
+        </div>
+
+    
+
+      <section id="destinos">
+        <div class="container">
+          <h2>Explora nuestros destinos</h2>
+          <div class="destino">
+            <div class="Destino1">
+                <img src="https://source.unsplash.com/t2yh3mlISdQ"alt="Venecia Italia">
+                <h1>Venecia, Italia</h1>
+                <p>Ven a visitar la Ciudad de los Canales, Venecia, Conoce su maravillosa arquitectura, viaja atraves de los canales, atrevete a conocer a una de las ciudades mas romanticas del mundo</p>
+                </div>
+            <a href="#formulario-pago-destino1" class="btn mostrar-formulario">Elegir</a>
+          </div>
+          <div class="destino">
+            <img src="https://source.unsplash.com/xWZa0GYCMbo"alt="Florencia">
+            <h1>Florencia, Italia</h1>
+            <p></p>
+            <a href="#formulario-pago-destino2" class="btn mostrar-formulario">Elegir</a>
+          </div>
+          <!-- Agrega más destinos aquí -->
+        </div>
+      </section>
+      
+      <section id="formulario-pago-destino1" class="formulario-pago">
+        <div class="container">
+          <h2>Formas de Pago</h2>
+          <form>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo electrónico">
+            <textarea placeholder="Mensaje"></textarea>
+            <label for="forma-pago">Forma de Pago:</label>
+            <select id="forma-pago">
+              <option value="tarjeta">Tarjeta de Crédito</option>
+              <option value="paypal">PayPal</option>
+              <option value="transferencia">Transferencia Bancaria</option>
+            </select>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+      
+      <section id="formulario-pago-destino2" class="formulario-pago">
+        <div class="container">
+          <h2>Formas de Pago</h2>
+          <form>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo electrónico">
+            <textarea placeholder="Mensaje"></textarea>
+            <label for="forma-pago">Forma de Pago:</label>
+            <select id="forma-pago">
+              <option value="tarjeta">Tarjeta de Crédito</option>
+              <option value="paypal">PayPal</option>
+              <option value="transferencia">Transferencia Bancaria</option>
+            </select>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </section>
+    <section id="contacto">
+      <div class="container">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes alguna pregunta o deseas reservar un viaje? ¡No dudes en contactarnos!</p>
+        <form>
+          <input type="text" placeholder="Nombre">
+          <input type="email" placeholder="Correo electrónico">
+          <textarea placeholder="Mensaje"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+      <footer>
+        <div class="container">
+          <p>&copy; 2023 Vesta - Todos los derechos reservados</p>
+        </div>
+      </footer>
+      
+</header>  
+  <script>
+    // Obtener todos los elementos con la clase 'mostrar-formulario'
+    const mostrarFormularios = document.querySelectorAll('.mostrar-formulario');
+  
+    // Iterar sobre cada elemento y agregar un evento de clic
+    mostrarFormularios.forEach((boton) => {
+      boton.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+        const destino = boton.getAttribute('href'); // Obtener el destino del formulario de pago
+        const formularioPago = document.querySelector(destino); // Obtener el formulario de pago correspondiente
+  
+        if (formularioPago.style.display === 'block') {
+          formularioPago.style.display = 'none'; // Ocultar el formulario de pago si ya está visible
+        } else {
+          formularioPago.style.display = 'block'; // Mostrar el formulario de pago si está oculto
+        }
+      });
+    });
+  
+    // Obtener todos los formularios de pago
+    const formulariosPago = document.querySelectorAll('.formulario-pago form');
+  
+    // Iterar sobre cada formulario y agregar un evento de envío
+    formulariosPago.forEach((formulario) => {
+      formulario.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevenir el envío del formulario
+        const nombre = formulario.querySelector('input[type="text"]').value; // Obtener el valor del campo de nombre
+        const correo = formulario.querySelector('input[type="email"]').value; // Obtener el valor del campo de correo electrónico
+        const mensaje = formulario.querySelector('textarea').value; // Obtener el valor del campo de mensaje
+        const formaPago = formulario.querySelector('select').value; // Obtener el valor de la forma de pago seleccionada
+  
+        // Aquí puedes agregar tu lógica para procesar los datos del formulario
+        // Por ejemplo, puedes enviarlos a un servidor, mostrar un mensaje de confirmación, etc.
+  
+        formulario.reset(); // Reiniciar el formulario después de enviarlo
+      });
+    });
+  </script>
+  
+  
+</body>
+</html>
+//autor Alvarez Onofre Jose Carlos

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+}
+.main-header{
+    background-image:url("https://source.unsplash.com/KMn4VEeEPR8");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+}
+.main-nav{
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+.logo{
+    color:beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    padding: 20px 40px;
+    font-size: 1.3rem;
+}
+
+ul{
+    display: flex;
+    margin-left: auto;
+    margin-right: 100px;
+}
+ul li a {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.3rem;
+    color: aliceblue;
+}
+ul li a:hover{
+    background: #489;
+}
+.Correo{
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+
+}
+.Correo h1{
+    font-size: 2rem;
+}
+.Correo p{
+    font-size: 1rem;
+}
+.Telefono{
+    width: 32.5%;
+    justify-content: center;
+    align-items: center;
+    top: 47%;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.Telefono h1{
+    font-size: 2rem;
+}
+.Direccion{
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -23%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    text-align: center;
+}
+.Direccion h1{
+    font-size: 2rem;
+}
+.imagen{
+    border: 1px black;
+}
+.Correo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.Telefono img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.Direccion img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
